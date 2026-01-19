@@ -1,0 +1,11 @@
+import numpy as np
+from awlf_astro.pipeline import AstroRestorer
+
+# Load your FITS data or numpy array
+data = np.load("data/sample_astro.npy")
+
+# Initialize engine
+restorer = AstroRestorer(sigma_threshold=4.0)
+
+# Process
+clean_image = restorer.process(data)
