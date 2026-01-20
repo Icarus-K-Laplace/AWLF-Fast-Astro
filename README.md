@@ -7,7 +7,9 @@ High-performance Python framework for removing cosmic rays and sensor stripes fr
 [![Numba](https://img.shields.io/badge/Powered%20by-Numba-orange.svg)](https://numba.pydata.org/)
 
 **AWLF-Astro** is a high-performance restoration framework designed for extreme astronomical imaging conditions, such as the Antarctic Survey Telescopes (AST3-2). It effectively removes **cosmic rays** and **vertical stripe noise** while preserving **>99.8% of stellar flux**.
-My algorithm achieves state-of-the-art (SOTA) performance in the specific domain of single-frame blind denoising with edge computing (GPU-free) and photometric fidelity. However, it underperforms compared to the latest deep learning models (e.g., DeepCR) in tasks requiring offline refinement and complex morphological recognition.
+
+In the niche of single-frame blind denoising under GPU-free edge computing with strict photometric fidelity, my algorithm is world-leading—indeed, state-of-the-art.
+It only yields to modern deep learning approaches (e.g., DeepCR) in offline, high-precision scenarios involving complex morphological analysis.
 ## 🧩 Pipeline
 ![AWLF-Fast-Astro Pipeline](StartDecision.png)
 
