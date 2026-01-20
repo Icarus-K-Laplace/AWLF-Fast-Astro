@@ -7,24 +7,7 @@ High-performance Python framework for removing cosmic rays and sensor stripes fr
 [![Numba](https://img.shields.io/badge/Powered%20by-Numba-orange.svg)](https://numba.pydata.org/)
 
 **AWLF-Astro** is a high-performance restoration framework designed for extreme astronomical imaging conditions, such as the Antarctic Survey Telescopes (AST3-2). It effectively removes **cosmic rays** and **vertical stripe noise** while preserving **>99.8% of stellar flux**.
-## 🧩 Pipeline Overview (AWLF-Fast-Astro)
 
-```mermaid
-graph TD
-    classDef inputStyle fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
-    classDef preStyle fill:#fff3e0,stroke:#f57c00,stroke-width:2px;
-    classDef coreStyle fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    classDef outputStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
-
-    Input([FITS / NPY Image]):::inputStyle
-    Destripe[Column Destriping]:::preStyle
-    SoftMask[Soft Star Mask]:::preStyle
-    HardMask[Hard Star Mask]:::preStyle
-    AWLF[AWLF JIT Core<br/>Laplacian Spike Detection]:::coreStyle
-    Blend[Soft Photometric Restore]:::coreStyle
-    Output([Cleaned Astro Image]):::outputStyle
-
-    Input --> Destripe --> SoftMask --> HardMask --> AWLF --> Blend --> Output
 
 ## 🚀 Key Features
 
